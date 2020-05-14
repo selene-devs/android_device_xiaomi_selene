@@ -31,6 +31,15 @@
     <!-- Flag specifying whether VT is available on device -->
      <bool name="config_device_vt_available">true</bool>
 
+    <!-- Smart Charging -->
+    <bool name="config_deviceSupportSmartCharging">true</bool>
+    <bool name="config_smartChargingAvailable">true</bool>
+
+    <!-- Smart charge sysfs node and value for suspend/resume charging-->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
+
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
