@@ -1408,6 +1408,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
     </carrier_config>
 	
+	<carrier_config mcc="452" mnc="01">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+	
 	<carrier_config mcc="452" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
