@@ -1243,3 +1243,7 @@ on property:ro.boot.product.hardware.sku=eos
 # HACK: Fix Network on SetupWizard
 on boot
     exec - root -- /system/bin/sh -c "settings put global restricted_networking_mode 0"
+
+    # Report max frequency to unity tasks and miHoYo games
+    write /proc/sys/kernel/sched_lib_name "com.miHoYo.,UnityMain,libunity.so" 
+    write /proc/sys/kernel/sched_lib_mask_force 255
