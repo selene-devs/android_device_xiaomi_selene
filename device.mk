@@ -104,17 +104,12 @@ PRODUCT_PACKAGES += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-service \
-    android.hardware.boot@1.1-impl.recovery
+    android.hardware.boot@1.2-service \
+    android.hardware.boot@1.2-mtkimpl \
+    android.hardware.boot@1.2-mtkimpl.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
-
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    update_engine \
-    update_verifier \
-    update_engine_sideload
+    bootctl
 
 # Biometrics
 PRODUCT_PACKAGES += \
