@@ -1247,3 +1247,5 @@ on boot
     # Report max frequency to unity tasks and miHoYo games
     write /proc/sys/kernel/sched_lib_name "com.miHoYo.,UnityMain,libunity.so" 
     write /proc/sys/kernel/sched_lib_mask_force 255
+
+    stop bootanim
