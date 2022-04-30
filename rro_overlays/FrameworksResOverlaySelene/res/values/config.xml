@@ -427,6 +427,20 @@
          level[MAX] <= value             MAX+1 -->
     <array name="config_screenThresholdLevels">
     </array>
+	
+    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+    <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+    </array>
+
+    <array name="config_sfps_sensor_props_0" translatable="false">
+        <item></item> <!--item>displayId</item-->
+        <item>1080</item> <!--item>sensorLocationX</item-->
+        <item>920</item> <!--item>sensorLocationY</item-->
+        <item>200</item> <!--item>sensorRadius</item-->
+    </array>
 
     <!-- Minimum screen brightness setting allowed by power manager.
          The user is forbidden from setting the brightness below this level.
