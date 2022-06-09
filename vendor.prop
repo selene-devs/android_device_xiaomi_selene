@@ -33,6 +33,12 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# SurfaceFlinger
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3 
+ro.surface_flinger.running_without_sync_framework=true
+ro.surface_flinger.vsync_event_phase_offset_ns=2000000 
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 drm.service.enabled=true
 debug.mtk_tflite.target_nnapi=29
