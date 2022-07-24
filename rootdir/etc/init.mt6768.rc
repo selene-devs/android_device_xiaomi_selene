@@ -1228,9 +1228,3 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
 
 on property:ro.boot.product.hardware.sku=eos
     start vendor.nfc_hal_service
-    
-on property:persist.sys.MT6768.dt2w=0
-    exec - system input -- /vendor/bin/dt2w_event 4
-
-on property:persist.sys.MT6768.dt2w=1
-    exec - system input -- /vendor/bin/dt2w_event 5
