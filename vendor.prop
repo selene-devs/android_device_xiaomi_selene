@@ -38,6 +38,7 @@ ro.hwui.render_ahead=3
 
 # SF
 debug.sf.use_phase_offsets_as_durations=1
+debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 debug.sf.late.app.duration=22500000
 debug.sf.late.sf.duration=27600000
 debug.sf.early.app.duration=22500000
