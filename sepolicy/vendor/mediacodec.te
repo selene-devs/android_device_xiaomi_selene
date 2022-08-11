@@ -1,1 +1,0 @@
-allow mediacodec sysfs_bus:dir search;

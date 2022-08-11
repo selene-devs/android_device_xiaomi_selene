@@ -1,6 +1,28 @@
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
-allow hal_fingerprint_default fp_data_file:dir r_dir_perms;
-allow hal_fingerprint_default fp_data_file:file rw_file_perms;
+# Allow fingerprint HAL to read and write fingerprint node
+allow hal_fingerprint_default vendor_fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint_default sysfs_fingerprint:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_fingerprint:file rw_file_perms;
 
-set_prop(hal_fingerprint_default, vendor_fp_prop)
+# Allow fingerprint HAL to setup fingerprint database files
+allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
+allow hal_fingerprint_default vendor_fingerprint_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default vendor_fingerprint_data_file:file create_file_perms;
+
+# Allow fingerprint HAL to read battery info
+allow hal_fingerprint_default sysfs_batteryinfo:dir { search };
+allow hal_fingerprint_default sysfs_batteryinfo:file r_file_perms;
+allow hal_fingerprint_default sysfs_pmu:dir { search };
+allow hal_fingerprint_default sysfs_pmu:file r_file_perms;
+
+# Create fingerprint HAL entrypoint
+allow hal_fingerprint_default hal_fingerprint_default_exec:file entrypoint;
+
+# Allow fingerprint HAL to get and set its props
+get_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
+# Allow fingerprint HAL to create netlink_socket
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
