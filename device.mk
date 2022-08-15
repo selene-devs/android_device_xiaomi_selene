@@ -369,14 +369,14 @@ PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor
 
 # Vibrator
-PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
-                                
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/mediatek
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
