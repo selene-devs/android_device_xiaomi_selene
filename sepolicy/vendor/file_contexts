@@ -5,7 +5,6 @@
 /data/vendor/goodix(/.*)?        u:object_r:fp_data_file:s0
 /data/vendor/fpc(/.*)?           u:object_r:fp_data_file:s0
 /data/gf_data(/.*)?              u:object_r:fp_data_file:s0
-/dev/goodix_fp                   u:object_r:fp_device:s0
 
 # FPS Info
 /sys/module/primary_display/parameters/display_framerate_main      u:object_r:sysfs_fpsinfo:s0
@@ -22,7 +21,6 @@
 
 # Mi Thermald
 /vendor/bin/mi_thermald       u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?    u:object_r:thermal_data_file:s0
 
 # Same Process HAL
 /vendor/lib(64)?/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-impl\.so  u:object_r:same_process_hal_file:s0
