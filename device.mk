@@ -484,9 +484,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RcsService
 
-# ImsInit hack
+# Vibrator
 PRODUCT_PACKAGES += \
-    ImsInit
+    android.hardware.vibrator-service.mediatek
 
 # VNDK
 PRODUCT_PACKAGES += \
