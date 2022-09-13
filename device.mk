@@ -366,6 +366,7 @@ PRODUCT_PACKAGES += \
 
 # Symbols
 PRODUCT_PACKAGES += \
+    libshim_audio \
     libshim_vtservice \
     libshim_watermark
 
@@ -504,11 +505,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libutils-v32 \
     libui-v32
-
-# VNDK 30 Files
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-core/libmedia_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmedia_helper-v30.so \
-    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-core/libmedia_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmedia_helper-v30.so
 
 # WiFi
 PRODUCT_COPY_FILES += \

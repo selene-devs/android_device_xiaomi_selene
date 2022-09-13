@@ -36,3 +36,15 @@ cc_library_shared {
         "libmediametrics_headers",
     ],
 }
+
+cc_library_shared {
+    name: "libshim_audio",
+    srcs: [
+        "libshim_audio.cpp"
+    ],
+    shared_libs: [
+        "libmedia_helper",
+        "libaudioutils"
+    ],
+    vendor: true
+}
