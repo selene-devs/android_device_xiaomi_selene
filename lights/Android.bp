@@ -1,4 +1,5 @@
-// Copyright (C) 2019 The LineageOS Project
+//
+// Copyright (C) 2021 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,18 +14,19 @@
 // limitations under the License.
 
 cc_binary {
+    name: "android.hardware.light-service.selene",
+    init_rc: ["android.hardware.light-service.selene.rc"],
+    vintf_fragments: ["android.hardware.light-service.selene.xml"],
     relative_install_path: "hw",
-    defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.selene",
-    proprietary: true,
-    init_rc: ["android.hardware.light@2.0-service.selene.rc"],
-    vintf_fragments: ["android.hardware.light@2.0-service.selene.xml"],
-    srcs: ["service.cpp", "Light.cpp"],
-    shared_libs: [
-        "libhardware",
-        "libhidlbase",
-        "liblog",
-        "libutils",
-        "android.hardware.light@2.0",
+    srcs: [
+        "main.cpp",
+        "Light.cpp",
     ],
+    shared_libs: [
+        "libbase",
+        "libhardware",
+        "libbinder_ndk",
+        "android.hardware.light-V1-ndk_platform",
+    ],
+    vendor: true,
 }
