@@ -367,6 +367,7 @@ PRODUCT_PACKAGES += \
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_audio \
+    libshim_beanpod \
     libshim_vtservice \
     libshim_watermark
 

@@ -44,6 +44,9 @@ function blob_fixup {
        vendor/bin/hw/android.hardware.thermal@2.0-service.mtk)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod)
+            "${PATCHELF}" --add-needed "libshim_beanpod.so" "${2}"
+            ;;
 	vendor/lib64/libmi_watermark.so)
             "${PATCHELF}" --add-needed "libshim_watermark.so" "${2}"
             ;;
