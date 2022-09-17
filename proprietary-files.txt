@@ -1,7 +1,3 @@
-
-# AEE - from Redmi/ares/ares:12/SP1A.210812.016/21.11.8:user/release-keys
-vendor/lib64/libudf.so|f57a4f63592b62c2de72b377021327756fc5fac1
-
 # Audio
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocompensationfilter_vendor.so
@@ -881,6 +877,10 @@ vendor/lib64/hw/thermal.mt6768.so
 
 # Time
 
+# UDF - from from selene-user 12 SP1A.210812.016 V13.0.8.0.SKUMIXM release-keys
+vendor/lib/libudf.so|7cdbb5c5c616dbbec6afcd75d5cc41f915ff82d6
+vendor/lib64/libudf.so|66324571c3f69057b250bce3b0d58c386da0c25b
+
 # WiFi
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
@@ -1392,7 +1392,6 @@ vendor/lib/libthha.so
 vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libtranslator_mapi_v3.0.so
 vendor/lib/libtranslator_utils.so
-vendor/lib/libudf.so
 vendor/lib/liburee_meta_drmkeyinstall.so
 vendor/lib/libutinterface_custom_md.so
 vendor/lib/libutinterface_md.so
