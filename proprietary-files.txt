@@ -175,6 +175,9 @@ vendor/etc/camera/Roboto_Medium.ttf
 vendor/etc/camera/sr_params.xml
 vendor/etc/camera/watermark_font_2300_3199.dat
 
+# Camera Utils - from from selene-user 12 SP1A.210812.016 V13.0.8.0.SKUMIXM release-keys
+vendor/lib64/libmtkcam_stdutils.so|1e800f54452dcd813967df5d22ed70e7553c18d4
+
 # Consumerir
 vendor/lib/hw/consumerir.mt6768.so
 vendor/lib64/hw/consumerir.mt6768.so
@@ -730,7 +733,6 @@ vendor/lib64/libmtkcam_pipeline_fbm.so
 vendor/lib64/libmtkcam_prerelease.so
 vendor/lib64/libmtkcam_rsc.so
 vendor/lib64/libmtkcam_scenariorecorder.so
-vendor/lib64/libmtkcam_stdutils.so
 vendor/lib64/libmtkcam_streamutils.so
 vendor/lib64/libmtkcam_synchelper.so
 vendor/lib64/libmtkcam_sysutils.so
