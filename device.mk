@@ -422,6 +422,7 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.mt6768.rc \
     init.mt6768.usb.rc \
+    init.target.rc \
     init.wlan_drv.rc \
     init.project.rc \
     init.sensor_1_0.rc \
