@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
     update_verifier \
     update_engine_sideload
 
+# Biometrics
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.selene
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libldacBT_dec \
