@@ -36,8 +36,8 @@ product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 /dev/block/platform/bootdevice/by-name/persistbak /mnt/vendor/persistbak ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 
 
-/devices/platform/externdevice* auto auto defaults voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/platform/mt_usb* auto vfat defaults voldmanaged=sdcard1:auto,encryptable=userdata
+/devices/platform/externdevice* auto auto defaults voldmanaged=sdcard1:auto
+/devices/platform/mt_usb* auto vfat defaults voldmanaged=sdcard1:auto
 
 /dev/block/platform/bootdevice/by-name/frp /persistent emmc defaults defaults
 
