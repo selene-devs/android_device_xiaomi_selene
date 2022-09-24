@@ -1,5 +1,14 @@
 type fp_data_file, file_type, data_file_type, core_data_file_type;
 type sysfs_usb_device, sysfs_type, fs_type;
 
+# Health
+type vendor_sysfs_ac_supply, fs_type, sysfs_type;
+type vendor_sysfs_battery_supply, fs_type, sysfs_type;
+type vendor_sysfs_usb_supply, fs_type, sysfs_type;
+type vendor_sysfs_charger_supply, fs_type, sysfs_type;
+type vendor_sysfs_bms_supply, fs_type, sysfs_type;
+type vendor_sysfs_parallel_supply, fs_type, sysfs_type;
+type vendor_sysfs_main_supply, fs_type, sysfs_type;
+
 # Touchpanel
 type sysfs_touchpanel, sysfs_type, fs_type;
