@@ -298,6 +298,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     android.hardware.power-service-mediatek
 
+PRODUCT_PACKAGES += \
+    android.hardware.power-V1-ndk_platform
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0 \
