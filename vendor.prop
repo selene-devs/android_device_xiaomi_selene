@@ -72,7 +72,6 @@ ro.lmk.psi_complete_stall_ms=70
 ro.lmk.swap_free_low_percentage=20
 ro.lmk.use_minfree_levels=true
 ro.lmk.kill_timeout_ms=100
-persist.adb.nonblocking_ffs=1
 ro.netflix.bsp_rev=MTK6768-19055-1
 ro.vendor.camera3.zsl.default=140
 ro.vendor.mediatek.platform=MT6768
