@@ -313,6 +313,10 @@ PRODUCT_PACKAGES += \
     libmtkperf_client
 
 PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor
+
+PRODUCT_PACKAGES += \
     android.hardware.power-V1-ndk_platform.vendor \
     android.hardware.power-V2-ndk_platform.vendor
 
