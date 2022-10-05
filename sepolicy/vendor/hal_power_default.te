@@ -1,0 +1,2 @@
+# To get/set powerhal state property
+set_prop(hal_power_default, vendor_power_prop)
