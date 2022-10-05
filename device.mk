@@ -311,6 +311,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V1-ndk_platform.vendor \
     android.hardware.power-V2-ndk_platform.vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0 \
