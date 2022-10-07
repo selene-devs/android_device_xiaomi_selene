@@ -298,7 +298,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.example
+    android.hardware.power-service.mediatek-libperfmgr
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
@@ -409,7 +409,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/xiaomi \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/google/interfaces \
+    hardware/google/pixel
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
