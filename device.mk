@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_VENDOR)/bin/dt2w_event
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    MtkFMRadio
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
