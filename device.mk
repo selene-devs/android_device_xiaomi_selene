@@ -577,4 +577,5 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.1.vendor
 	
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.adb.nonblocking_ffs=0
+    ro.adb.nonblocking_ffs=0 \
+	persist.adb.nonblocking_ffs=0
