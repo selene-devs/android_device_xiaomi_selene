@@ -27,6 +27,9 @@ ro.boot.fpsensor           u:object_r:vendor_fp_prop:s0
 ro.hardware.fp.            u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor.          u:object_r:vendor_fp_prop:s0
 
+# FM Radio
+ro.vendor.mtk_fm_short_antenna_support			u:object_r:vendor_mtk_default_prop:s0
+
 # Recovery
 persist.sys.recovery_update  u:object_r:persist_recovery_update_prop:s0
 
