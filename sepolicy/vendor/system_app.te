@@ -8,3 +8,7 @@ allow system_app sw_sync_device:chr_file rw_file_perms;
 allow system_app mtk_hal_pq_hwservice:hwservice_manager find;
 binder_call(system_app, mtk_hal_pq)
 binder_call(system_app, wificond)
+
+# FM Radio
+get_prop(system_app, vendor_mtk_wmt_prop)
+get_prop(system_app, vendor_mtk_default_prop)
