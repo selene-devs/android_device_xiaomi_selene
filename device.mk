@@ -352,7 +352,8 @@ PRODUCT_PACKAGES += \
     
 # Recovery
 PRODUCT_PACKAGES += \
-    init.recovery.mt6768.rc
+    init.recovery.mt6768.rc \
+	init.recovery.mt6785.sh
 
 # RenderScript
 PRODUCT_PACKAGES += \
