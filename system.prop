@@ -27,7 +27,6 @@ dalvik.vm.dex2oat64.enabled=true
 persist.camera.dualcal.state=-1
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
-vendor.camera.aux.packageexcludelist=org.telegram.messenger,com.microsoft.teams,com.discord
 
 # Display
 debug.sf.disable_backpressure=1
