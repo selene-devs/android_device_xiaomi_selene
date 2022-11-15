@@ -488,7 +488,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libutils-v32
+    libutils-v32 \
+    libui-v32
 
 # VNDK 30 Files
 PRODUCT_COPY_FILES += \
