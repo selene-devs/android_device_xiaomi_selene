@@ -374,7 +374,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service
                                 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
+    hardware/xiaomi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
