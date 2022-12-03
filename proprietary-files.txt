@@ -976,7 +976,6 @@ vendor/bin/libccu_s5kjn1_ofilm_main_mipi_raw.pm
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
 vendor/bin/meta_tst
-vendor/bin/misc_writer
 vendor/bin/mmc_ffu
 vendor/bin/mmc_ffu_hynix
 vendor/bin/mmc_ffu_micron
