@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0-util \
     android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
+    audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
     audio_policy.stub \
