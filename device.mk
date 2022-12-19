@@ -376,7 +376,8 @@ PRODUCT_PACKAGES += \
     libshim_beanpod \
     libshim_showlogo \
     libshim_vtservice \
-    libpiex_shim
+    libpiex_shim \
+	libcamera_metadata_shim
 
 # Thermal
 PRODUCT_PACKAGES += \
