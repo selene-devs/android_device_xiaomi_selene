@@ -370,7 +370,7 @@ PRODUCT_PACKAGES += \
     libshim_beanpod \
     libshim_showlogo \
     libshim_vtservice \
-    libshim_watermark
+    libpiex_shim
 
 # Thermal
 PRODUCT_PACKAGES += \

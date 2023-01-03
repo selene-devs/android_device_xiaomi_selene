@@ -14,13 +14,6 @@
 // limitations under the License.
 
 cc_library_shared {
-    name: "libshim_watermark",
-    srcs: ["libshim_watermark.cpp"],
-    shared_libs: ["libpiex"],
-    vendor: true
-}
-
-cc_library_shared {
     name: "libshim_vtservice",
     srcs: ["libshim_vtservice.cpp"],
     compile_multilib: "32",

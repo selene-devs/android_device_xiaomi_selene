@@ -51,7 +51,7 @@ function blob_fixup {
             "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
             ;;
 	vendor/lib64/libmi_watermark.so)
-            "${PATCHELF}" --add-needed "libshim_watermark.so" "${2}"
+            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
             "${PATCHELF}" --replace-needed "android.hardware.power-V1-ndk_platform.so" "android.hardware.power-V1-ndk.so" "${2}"
