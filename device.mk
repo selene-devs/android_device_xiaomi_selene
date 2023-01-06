@@ -28,9 +28,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/selene/selene-vendor.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/mt6768-ims/mt6768-ims-vendor.mk)
-
 # APEX
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
