@@ -102,6 +102,12 @@ ro.vendor.mtk_external_sim_only_slots=0
 ro.vendor.sim_me_lock_mode=0
 ro.vendor.ap_info_monitor=0
 ro.vendor.md_auto_setup_ims=1
+
+# Zram
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=1440
+ro.zram.periodic_wb_delay_hours=2
+
 persist.vendor.ims_support=1
 persist.vendor.mtk_dynamic_ims_switch=1
 persist.vendor.mims_support=2
