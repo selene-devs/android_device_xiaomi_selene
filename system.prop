@@ -25,8 +25,8 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Camera
 persist.camera.dualcal.state=-1
-persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.lineageos.aperture
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.lineageos.aperture
 
 # Display
 debug.sf.disable_backpressure=1
