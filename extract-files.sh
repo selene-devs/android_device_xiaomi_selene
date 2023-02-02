@@ -29,9 +29,6 @@ function blob_fixup {
         lib/libsink.so)
             "$PATCHELF" --add-needed "libshim_vtservice.so" "$2"
             ;;
-        vendor/bin/hw/camerahalserver)
-            "$PATCHELF" --replace-needed "libutils.so" "libutils-v30.so" "$2"
-            ;;
         vendor/lib64/libmtkcam_stdutils.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v30.so" "$2"
             ;;
