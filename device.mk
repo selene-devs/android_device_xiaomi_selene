@@ -494,6 +494,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay \
+    CarrierConfigOverlay \
     android.hardware.wifi@1.0 \
     android.hardware.wifi@1.0.vendor \
     android.hardware.wifi@1.1 \
