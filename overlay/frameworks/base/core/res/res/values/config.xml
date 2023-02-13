@@ -76,6 +76,9 @@
      during initialization when the setting is still null. -->
      <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
     <!-- Should the pinner service pin the Home application? -->
      <bool name="config_pinnerHomeApp">true</bool>
 
