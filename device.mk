@@ -392,6 +392,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Runtime Resource (RRO) Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlaySelene \
+    ApertureQRScannerOverlaySelene \
     CarrierConfigOverlaySelene \
     DialerOverlaySelene \
     FrameworksResOverlaySelene \
