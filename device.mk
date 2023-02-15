@@ -137,7 +137,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5.vendor \
     android.hardware.camera.device@3.6 \
     android.hardware.camera.device@3.6.vendor
-    
+
+# Camera
+PRODUCT_PACKAGES += \
+    Aperture
+
 # Disable Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -387,6 +391,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Runtime Resource (RRO) Overlays
 PRODUCT_PACKAGES += \
+    ApertureOverlaySelene \
     CarrierConfigOverlaySelene \
     DialerOverlaySelene \
     FrameworksResOverlaySelene \
