@@ -299,7 +299,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-V1-ndk_platform
+    android.hardware.power-V1-ndk_platform.vendor \
+    android.hardware.power-V2-ndk_platform.vendor
 
 # Radio
 PRODUCT_PACKAGES += \
