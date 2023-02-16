@@ -383,8 +383,18 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
+
+# Runtime Resource (RRO) Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlaySelene \
+    DialerOverlaySelene \
+    FrameworksResOverlaySelene \
+    SettingsOverlaySelene \
+    SystemUIOverlaySelene \
+    TelephonyOverlaySelene \
+    TetheringOverlaySelene \
+    WifiOverlaySelene
 
 # Dynamic Partitions 
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -489,9 +499,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy.selene
 
 PRODUCT_PACKAGES += \
-    WifiOverlay \
-    TetheringConfigOverlay \
-    CarrierConfigOverlay \
     android.hardware.wifi@1.0 \
     android.hardware.wifi@1.0.vendor \
     android.hardware.wifi@1.1 \

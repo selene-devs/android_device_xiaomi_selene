@@ -1,0 +1,7 @@
+runtime_resource_overlay {
+    name: "CarrierConfigOverlaySelene",
+    theme: "CarrierConfigOverlay",
+    sdk_version: "current",
+    vendor: true,
+    aaptflags: ["--keep-raw-values"],
+}
