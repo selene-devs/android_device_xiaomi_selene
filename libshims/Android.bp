@@ -19,19 +19,3 @@ cc_library_shared {
     shared_libs: ["libpiex"],
     vendor: true
 }
-
-cc_library_shared {
-    name: "libshim_vtservice",
-    srcs: ["libshim_vtservice.cpp"],
-    shared_libs: [
-        "libaudioclient",
-        "libgui",
-        "libstagefright",
-        "libutils",
-    ],
-    header_libs: [
-        "libaudioclient_headers",
-        "libmedia_headers",
-        "libmediametrics_headers",
-    ],
-}
