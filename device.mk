@@ -62,6 +62,7 @@ PRODUCT_PACKAGES += \
     libtinycompress.vendor
 
 PRODUCT_PACKAGES += \
+    BesLoudness \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
