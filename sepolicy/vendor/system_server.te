@@ -1,2 +1,5 @@
-#Smart charge
-allow system_server sysfs_battery_supply:file rw_file_perms;
+# Allow system server battery suply rw access
+allow system_server vendor_sysfs_battery_supply:file rw_file_perms;
+
+# Allow system_server to read Fast Charging status
+allow system_server vendor_sysfs_battery_supply:file { getattr open read };
