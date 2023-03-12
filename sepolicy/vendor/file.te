@@ -6,6 +6,7 @@ type fingerprint_data_file, core_data_file_type, data_file_type, file_type;
 type vendor_fingerprint_data_file, data_file_type, file_type;
 type vendor_fingerprint_device, dev_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
+type ccci_aud, dev_type;
 
 # Graphics
 type sysfs_mali, fs_type, sysfs_type;

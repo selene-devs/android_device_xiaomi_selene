@@ -1,0 +1,9 @@
+allow untrusted_app tmpfs:lnk_file { read };
+allow untrusted_app proc_zoneinfo:file r_file_perms;
+get_prop(untrusted_app, virtual_ab_prop)
+allow untrusted_app virtual_ab_prop:file { map };
+allow untrusted_app proc_bus_input:file { open read };
+allow untrusted_app cgroup:file { open read };
+allow untrusted_app system_lib_file:file { execmod };
+allow untrusted_app rootfs:dir { read };
+allow untrusted_app block_device:dir { search };
