@@ -1229,3 +1229,7 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
 
 on property:ro.boot.product.hardware.sku=eos
     start vendor.nfc_hal_service
+
+# HACK: Fix Network on SetupWizard
+on boot
+    exec - root -- /system/bin/sh -c "settings put global restricted_networking_mode 0"
