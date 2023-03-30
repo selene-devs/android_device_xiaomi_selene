@@ -165,6 +165,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
