@@ -51,6 +51,7 @@ debug.sf.late.sf.duration=27600000
 debug.sf.use_phase_offsets_as_durations=1
 
 # RIL
+persist.sys.radio.force_lte_ca=true
 persist.sys.fflag.override.settings_provider_model=false
 
 # IPO
