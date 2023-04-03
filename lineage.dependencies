@@ -16,17 +16,14 @@
     "repository": "PixelExperience/hardware_xiaomi",
     "target_path": "hardware/xiaomi",
     "branch": "lineage-20"
-  },
-    {
-    "remote": "gitlab",
-    "repository": "GhostMaster69-dev/cosmic-clang",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-cosmic",
-    "branch": "master"
-  },
     {
     "remote": "github",
     "repository": "PixelExperience/device_mediatek_sepolicy_vndr",
     "target_path": "device/mediatek/sepolicy_vndr",
     "branch": "thirteen"
+  }
+  {
+    "repository" : "android_packages_apps_RevampedFMRadio",
+    "target_path": "packages/apps/RevampedFMRadio",
   }
 ]
