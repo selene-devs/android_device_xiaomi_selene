@@ -22,8 +22,5 @@
     "target_path": "device/mediatek/sepolicy_vndr",
     "branch": "thirteen"
   }
-  {
-    "repository" : "android_packages_apps_RevampedFMRadio",
-    "target_path": "packages/apps/RevampedFMRadio",
-  }
+  
 ]
