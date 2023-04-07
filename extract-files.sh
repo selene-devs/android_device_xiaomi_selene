@@ -30,7 +30,7 @@ function blob_fixup {
             echo "$(cat ${2}) input" > "${2}"
        	    ;;
         lib/libsink.so)
-            "$PATCHELF" --add-needed "libshim_vtservice.so" "$2"
+            "$PATCHELF" --add-needed "libshim_vtservice.so" "${2}"
             ;;
         vendor/lib/hw/audio.primary.mt6768.so)
             "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
