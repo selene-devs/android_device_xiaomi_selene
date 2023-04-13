@@ -33,6 +33,9 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# HWUI
+ro.hwui.render_ahead=10
+
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 drm.service.enabled=true
 debug.mtk_tflite.target_nnapi=29
