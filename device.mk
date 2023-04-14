@@ -298,9 +298,6 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.example
-
-PRODUCT_PACKAGES += \
     android.hardware.power@1.0 \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1 \
