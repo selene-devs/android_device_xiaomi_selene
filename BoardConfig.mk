@@ -195,3 +195,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Security patch date
 VENDOR_SECURITY_PATCH := 2021-07-01
+
+# Wifi
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
