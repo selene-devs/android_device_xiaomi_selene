@@ -26,9 +26,6 @@ source "${HELPER}"
 
 function blob_fixup {
     case "$1" in
-    	vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
-            echo "$(cat ${2}) input" > "${2}"
-       	    ;;
         lib/libsink.so)
             "$PATCHELF" --add-needed "libshim_vtservice.so" "${2}"
             ;;
@@ -52,9 +49,6 @@ function blob_fixup {
             ;;
 	vendor/lib64/libmi_watermark.so)
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
-            ;;
-       vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
-            "${PATCHELF}" --replace-needed "android.hardware.power-V1-ndk_platform.so" "android.hardware.power-V1-ndk.so" "${2}"
             ;;
        vendor/lib*/hw/dfps.mt6768.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
