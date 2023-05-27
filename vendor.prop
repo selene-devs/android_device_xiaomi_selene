@@ -36,6 +36,16 @@ persist.dbg.wfc_avail_ovr=1
 # HWUI
 ro.hwui.render_ahead=20
 
+# SF
+debug.sf.disable_backpressure=1
+debug.sf.high_fps.early.app.duration=22500000
+debug.sf.high_fps.early.sf.duration=27600000
+debug.sf.high_fps.earlyGl.app.duration=22500000
+debug.sf.high_fps.earlyGl.sf.duration=27600000
+debug.sf.high_fps.hwc.min.duration=17000000
+debug.sf.high_fps.late.app.duration=22500000
+debug.sf.high_fps.late.sf.duration=27600000
+
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 drm.service.enabled=true
 debug.mtk_tflite.target_nnapi=29
@@ -80,6 +90,7 @@ ro.vendor.mtk_eccci_c2k=1
 ro.vendor.mtk_ps1_rat=C/Lf/Lt/W/T/G
 ro.vendor.mtk_lte_support=1
 ro.vendor.mtk_c2k_support=1
+ro.vendor.mi_sf.product_device=true
 telephony.active_modems.max_count=2
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.num_md_protocol=2
@@ -213,6 +224,7 @@ persist.log.tag.WpfaDriverMessage=S
 persist.log.tag.WpfaDriverRegFilter=S
 persist.log.tag.WpfaDriverULIpPkt=S
 persist.log.tag.WpfaDriverUtilis=S
+persist.log.tag.lsc_nvram=S
 persist.log.tag.WpfaDriverVersion=S
 persist.log.tag.WpfaFilterRuleReqHandler=S
 persist.log.tag.WpfaRingBuffer=S
