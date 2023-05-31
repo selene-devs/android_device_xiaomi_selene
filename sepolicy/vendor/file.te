@@ -8,9 +8,6 @@ type vendor_fingerprint_device, dev_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
 type ccci_aud, dev_type;
 
-# Graphics
-type sysfs_mali, fs_type, sysfs_type;
-
 # Latency
 type latency_device, dev_type;
 
