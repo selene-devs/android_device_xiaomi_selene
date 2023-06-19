@@ -134,7 +134,7 @@ on charger
     start mi_thermald
 
 on fs
-    start vendor.boot-hal-1-1
+    start vendor.boot-hal-1-2
 
     # mount fstab
     write /proc/bootprof "INIT:Mount_START"
