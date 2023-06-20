@@ -97,7 +97,13 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
-    otapreopt_script
+    otapreopt_script \
+	update_engine \
+    update_engine_sideload \
+    update_verifier
+	
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # Boot Control
 PRODUCT_PACKAGES += \
