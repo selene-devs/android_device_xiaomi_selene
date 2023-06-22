@@ -28,7 +28,6 @@ AB_OTA_PARTITIONS := \
     system \
     system_ext \
     vendor \
-    odm \
     vbmeta \
     vbmeta_system \
     vbmeta_vendor
@@ -127,7 +126,6 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 220270592
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Reserve space for gapps install
 ifneq ($(WITH_GAPPS),true)
@@ -147,8 +145,7 @@ BOARD_MAIN_PARTITION_LIST := \
     product \
     system \
     system_ext \
-    vendor \
-    odm
+    vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -169,7 +166,7 @@ BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
-BOARD_AVB_VBMETA_VENDOR := vendor odm
+BOARD_AVB_VBMETA_VENDOR := vendor
 BOARD_AVB_VBMETA_VENDOR_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 0
@@ -181,7 +178,6 @@ TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 # Non-SAR on Android 10 means the presence of stage-1 ramdisk
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
 BOARD_ROOT_EXTRA_FOLDERS += metadata
 BOARD_USES_METADATA_PARTITION := true
