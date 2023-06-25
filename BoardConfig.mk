@@ -69,7 +69,7 @@ BOARD_HAS_MTK_HARDWARE := true
 BOARD_HAVE_MTK_FM := true
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
