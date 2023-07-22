@@ -252,10 +252,6 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     libpcap.vendor
-    
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Permissions
 PRODUCT_COPY_FILES += \
