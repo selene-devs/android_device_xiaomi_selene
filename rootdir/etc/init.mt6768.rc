@@ -40,6 +40,10 @@ on init
     chown system input /dev/input/event5
     chown system input /dev/input/event6
 
+    # DT2W
+    chown system system /sys/touchpanel/double_tap
+    chmod 0660 /sys/touchpanel/double_tap
+
 # change lk_env permission
     chown root system /proc/lk_env
     chmod 0660 /proc/lk_env
