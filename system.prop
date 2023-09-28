@@ -29,7 +29,6 @@ persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.lineageos.aperture
 
 # Display
-debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 ro.opengles.version=196610
 ro.zygote.preload.enable=0

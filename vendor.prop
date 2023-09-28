@@ -49,6 +49,9 @@ debug.sf.earlyGl.sf.duration=30000000
 debug.sf.hwc.min.duration=23000000
 debug.sf.enable_transaction_tracing=false
 debug.sf.enable_gl_backpressure=1
+ro.surface_flinger.force_hwc_copy_for_virtual_displays
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 drm.service.enabled=true
@@ -486,7 +489,6 @@ persist.log.tag.MAPI-NetworkSocketConnection=S
 persist.log.tag.MAPI-SocketConnection=S
 persist.log.tag.MAPI-SocketListener=S
 persist.log.tag.MAPI-CommandProcessor=S
-ro.surface_flinger.primary_display_orientation=0
 ro.vendor.pref_scale_enable_cfg=1
 persist.vendor.md_c2k_cap_dep_check=0
 ro.vendor.colorpick_adjust=true
