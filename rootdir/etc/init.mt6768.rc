@@ -1249,3 +1249,9 @@ on boot
     write /proc/sys/kernel/sched_lib_mask_force 255
 
     stop bootanim
+
+on property:persist.sys.MT6768.dt2w=0
+    exec - system input -- /vendor/bin/dt2w_event 4
+
+on property:persist.sys.MT6768.dt2w=1
+    exec - system input -- /vendor/bin/dt2w_event 5

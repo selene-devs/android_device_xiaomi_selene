@@ -43,5 +43,8 @@
 /sys/devices/platform/soc/ca0c000\.qcom,cci/ca0c000\.qcom,cci:qcom,camera@1/video4linux/video[0-9]/wakeup[0-9]+(/.*)?                                       u:object_r:sysfs_wakeup:s0
 /sys/devices/platform/soc/ca0c000\.qcom,cci/ca0c000\.qcom,cci:qcom,camera@2/video4linux/video[0-9]/wakeup[0-9]+(/.*)?                                       u:object_r:sysfs_wakeup:s0
 
+# DT2W Script
+/vendor/bin/dt2w_event  u:object_r:dt2w_event_exec:s0
+
 # WiFi
 /(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@[0-9]\.[0-9]-service-lazy\.selene 		u:object_r:hal_wifi_default_exec:s0
